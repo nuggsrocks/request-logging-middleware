@@ -1,6 +1,4 @@
-function logRequest(req, res, next) {
+module.exports = function(req, res, next) {
     console.log(`${req.method} ${req.path} - ${req.ip}`);
     next();
 };
-
-module.exports = logRequest;
